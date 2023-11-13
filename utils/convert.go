@@ -8,15 +8,15 @@ import (
 )
 
 func main() {
-    fileData, err := os.ReadFile("burn.dat")
+    fileData, err := os.ReadFile("../burn.dat")
     if err != nil {
         panic(err)
     }
 
-    const width, height = 320, 200
+    const width, height = 320, 166
     img := image.NewPaletted(image.Rect(0, 0, width, height), nil)
 
-    // Decode the RLE data (assuming it starts right at the beginning of the file)
+    // Decode the RLE data from the start of the file
     var dataIndex, x, y int
     for dataIndex < len(fileData)-768 { // Assuming the last 768 bytes are the palette
         byteValue := fileData[dataIndex]
@@ -32,6 +32,9 @@ func main() {
                 if x >= width {
                     x = 0
                     y++
+                    if y >= height {
+                        break
+                    }
                 }
             }
         } else { // Not RLE encoded
@@ -40,6 +43,9 @@ func main() {
             if x >= width {
                 x = 0
                 y++
+                if y >= height {
+                    break
+                }
             }
         }
     }
@@ -54,7 +60,7 @@ func main() {
     }
 
     // Save the image as PNG
-    outputFile, err := os.Create("burn.png")
+    outputFile, err := os.Create("../img/burn.png")
     if err != nil {
         panic(err)
     }
