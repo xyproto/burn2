@@ -1,2 +1,5 @@
 # burn2
-A port of Burn (burn.sf.net) to Linux (a work in progress!)
+
+## A work in progress!
+
+A port of my old drawing program [Burn](https://burn.sf.net) to Linux.
