@@ -1,0 +1,76 @@
+Unfinished command listing
+--------------------------
+
+draw		enter drawmode
+cls		clear screen
+tile		show the image tiled
+show		show the image centered
+help		enter helpmode
+ascii		show an ascii representation of the image
+info		show some various info
+ver		show the version number
+defpal		reset the palette
+monopal		replace the palette with a monochrome
+vgapal		replace the palette with the standard vga
+defturtle	sets the cursor coordinates to default
+framename	returns the animationframe's name
+saveframe	saves the image as a frame in an animation
+saveas		save an image as any frame in an animation
+jmpframe	move to any frame in an animation
+showanim	shows the animation
+distort		performs a twirl-effect on the image
+newanim		new animation
+loadanim	load an animation
+quit		quit
+exit		quit
+bye		quit
+logout		quit
+halt		quit witout any questions asked
+?:		c:, d:, e: etc. (change drive)
+new		new image and palette
+cd		change directory
+nextcolor	next color
+prevcolor	previous color
+turnleft	turn the turtle left
+turnright	turn the turtle right
+clear		clear out the image
+plot		plot a pixel at the current position
+fastblur	palette based blur
+fastdist	distortion
+blur		"truecolor" blur
+flip		horizontal flip
+flop		vertical flop
+floipp		rotate image 90 degrees to the right
+!wfk		wait for key
+noanim		no animation
+xpos		the cursor's x-coordinate
+ypos		the cursor's y-coordinate
+bc		the background color
+color		the foreground color
+set		defines a color
+forward 	move the turtle forward
+backward	move the turtle backward
+dir		list the contents of the current directory 
+ls		list the contents of the current directory 
+type		prints a file on the screen
+cat		prints a file on the screen
+del		delete a single file
+echo		print text on the screen
+save		save a file
+load		load a file
+rem
+readme
+makeanimscript
+showkey
+num
+k
+heading
+n
+main
+for
+fxy
+{
+begin
+}
+end
+call

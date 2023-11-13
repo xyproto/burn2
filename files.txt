@@ -1,0 +1,24 @@
+If you're a user, this is all you need to run burn:
+
+   burn.exe - the executable
+   burn.dat - data file
+
+
+If you're planning to compile Burn by yourself,
+you probably need these files (and ie. turbo pascal):
+
+   burn.pas - sourcecode for the executable
+   burnit.pas - sourcecode for a unit
+   newcrt.tpu - a tiny ripped unit
+
+
+Most people don't need these files:
+
+   file_id.diz - a really, really short description
+
+
+Some people might like to have a look at these files:
+
+   burndoc.txt - unfinished cmd overview
+   readme.txt - a few helpful hints
+   files.txt - this file
