@@ -1,6 +1,7 @@
-utils/convert
-*.o
 *.bak
+*.o
 *.swp
 *.tmp
 .DS_Store
+burn2
+utils/convert

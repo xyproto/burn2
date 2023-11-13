@@ -19,7 +19,7 @@ var (
 
 // P procedure fills a portion of TheImage with a color
 func P(x, y, c byte) {
-	preCalc := x*5 + (y << 10) + (y << 8) + 21140
+	var preCalc int = int(x)*5 + int(y)*1024 + int(y)*256 + 21140
 	for i := 0; i < 3; i++ {
 		for j := 0; j < 4; j++ {
 			TheImage[preCalc+j] = c
